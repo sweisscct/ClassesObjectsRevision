@@ -8,7 +8,7 @@ package classesobjectsrevision;
  *
  * @author celeb
  */
-public class Circle extends Shape {
+public class Circle extends RegularPolygon {
     private int radius;
 
     public Circle(int radius) {
@@ -23,5 +23,8 @@ public class Circle extends Shape {
         this.radius = radius;
     }
     
-    
+    @Override
+    public int getArea() {
+        return 3*radius*radius;
+    }
 }

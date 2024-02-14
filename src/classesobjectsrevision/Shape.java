@@ -8,7 +8,7 @@ package classesobjectsrevision;
  *
  * @author celeb
  */
-public class Shape {
+public abstract class Shape {
     private boolean isFilled;
 
     public boolean isFilled() {
@@ -19,5 +19,6 @@ public class Shape {
         this.isFilled = isFilled;
     }
     
-    
+    public abstract int getArea();
+            
 }

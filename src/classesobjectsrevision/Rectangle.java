@@ -28,7 +28,18 @@ public class Rectangle extends Shape {
         return length;
     }
     
+    
+    public int getLength(int length) {return 5;}
+    public int getLength(String length) {return 5;}
+    public int getLength(int length, String text) {return 5;}
+    public int getLength(String length, int text) {return 5;}
+    
     public void setLength(int length) {
         this.length = length;
+    }
+
+    @Override
+    public int getArea() {
+        return length * width;
     }
 }

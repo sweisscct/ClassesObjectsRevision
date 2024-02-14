@@ -16,6 +16,13 @@ public class ClassesObjectsRevision {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+//        DataIO input = new DataIO();
+        
+//        String[] data = input.getData();
+        
+        
+        
+        
         String[] rectangleNames = {"Rect1", "Recty", "Bad Square"};
         int[] rectangleLengths = {3, 7, 1};
         int[] rectangleWidths = {2, 6, 8};
@@ -31,13 +38,21 @@ public class ClassesObjectsRevision {
         ArrayList<Rectangle> rectList = new ArrayList<>();
         rectList.add(rect1);
 //        rectList.add(circle1);
+        Shape shape1 = new Rectangle(5, 5);
 
         /*
             Polymorphism - Rectangles can also act as shapes!
         */
+        
+        
+        
         ArrayList<Shape> shapeList = new ArrayList<>();
+        
+//        shapeList.
+        
         shapeList.add(rect1);
         shapeList.add(circle1);
+        shapeList.add(shape1);
         
         for (Shape shape : shapeList) {
             System.out.println(shape.isFilled()); // Cannot access rectangle or circle specific methods
